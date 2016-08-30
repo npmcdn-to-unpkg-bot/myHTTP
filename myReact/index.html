@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="./build/react.js"></script>
+    <script src="./build/react-dom.js"></script>
+    <script src="./build/browser.min.js"></script>
+  </head>
+  <body>
+    <div id="example"></div>
+    <script type="text/babel">
+
+      var HeaderElement= React.createClass({
+        getDefaultProps :function(){
+          return {logined:false};
+        },
+        render:function () {
+          return(
+                  <div className="header">
+                    <h1>itag</h1>
+                    <div className="h_cont">
+                      <span className="icon"></span>
+                      <this.loginElem />
+                    </div>
+                  </div>
+          )
+        }
+      })
+
+      HeaderElement.loginElem = React.createClass({
+            render:function () {
+              return <a key="loginBtn" class="J_loginHandler">login</a>
+            }
+      })
+      HeaderElement.userElem = React.createClass({
+            render:function () {
+              return <a class="user"></a>
+            }
+      })
+
+      ReactDOM.render(
+              <HeaderElement/>,
+              document.body
+      )
+    </script>
+  </body>
+</html>

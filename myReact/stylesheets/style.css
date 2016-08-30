@@ -1,0 +1,204 @@
+body{
+	margin: 0;
+	background-color: #fafafa;
+}
+.header{
+	width: 100%; background-color: #fff;
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 10px; 
+}
+.header h1{display: none;}
+.h_cont{
+	width: 800px; height: 50px;
+	margin: 0 auto; padding:5px; 
+	position: relative;
+}
+.h_cont .icon{ 
+	display: inline-block;
+	width: 95px; height: 35px;
+	background-image: url(../images/user1.png);
+	text-align: left; margin: 0; padding: 8px;
+}
+/* user and login change*/
+.h_cont .user{
+	display: inline-block;
+	width: 55px; height: 35px;
+	position: absolute; right: 5px; margin-top: 0; padding: 8px;
+	font-size: 18px; 
+	cursor: pointer;
+}
+.h_cont .bgUser{
+	background-image:url(../images/user1.png); background-position: 70px 0;
+}
+.infoPop{
+	display: block ; 
+	margin: 0; z-index: 100; padding: 0.8rem 1.1rem;
+	background: #fff; border: 1px solid #000;
+	position: absolute; right: 0;
+}
+.infoPop li{
+	font-size: 1rem; line-height: 1.5rem;
+	list-style:none; 
+	text-align: center;
+}
+.infoPop strong{
+	font-weight: bolder; 
+}
+.infoPop:before{
+	content: ""; display: block;
+	border-color: transparent transparent #000 transparent;
+    border-style: solid;
+    border-width: 0 10px 10px 10px;
+    position: absolute; 
+    top: -0.7rem; right: 1.8rem;
+}
+.infoPop .logout{
+	width: 100%; padding: 0 5px;
+	border: 1px solid #000; border-radius: 2px;
+	cursor: pointer;
+}
+/*heade part end*/
+
+.content{
+	width: 800px; margin: 0 auto; 
+	background: #fff;
+	border: 1px solid #ccc;
+	position: relative;
+	height: 500px;  /*padding-bottom: 10%;*/  /*faq*/
+}
+.content img{
+	display: inline-block; 
+	/*width: 70%; */
+	width: 100%;   /*faq*/
+	max-height: 500px;
+}
+/*img part*/
+.postForm{
+	display: block;  float: left;  /*faq*/
+	width: 25%;
+	padding-left: 2%; padding-right: 2%;
+	/*position: absolute; top: 20px;*/
+	padding-top: 50px; padding-bottom: 2%;           /*faq*/
+	background: #fff;
+}
+.postForm fieldset{
+	border: none; width: 80%; margin: 5px auto; 
+	padding: 0; text-align: left;
+}
+.postForm fieldset legend{
+	font-size: 24px; text-align: left;
+}
+.postForm fieldset span{
+	display: inline-block;
+}
+.postForm input{
+	display: inline-block; 
+	width: 80%; height: 22px; margin: 5px;
+	border: 1px solid #ccc;
+}
+.postForm button{
+	height: 28px; background: #fff; border: 1px solid #ccc;
+	width: 70%; margin: 2px 1% 2px 0;
+}
+.postForm .submitbtn{
+	margin-top: 15px;
+}
+
+/*register*/
+.registerArea{
+	width: 430px; height: auto;
+	margin: 0 auto;
+	position: relative; top: 20%;
+	padding: 0 175px;
+	text-align: center;
+}
+.registerArea h4{
+	display: inline-block;
+	/*margin-bottom: 10px; margin-right: 20px;*/
+	margin:10px;
+	cursor: pointer;
+}
+.registerArea form fieldset{
+	border: none; display: relative;
+	text-align: left;
+}
+
+.registerArea form span{
+	display: inline-block;
+	font-size: 20px;
+	margin: 10px;
+}
+.registerArea form input{
+	border: 1px solid #ccc;
+	width: 250px; height: 20px; 
+	position: absolute; left: 300px;
+	margin: 5px 0; padding: 5px;  
+	font-size: 20px; 
+}
+.registerArea form button{
+	display: block;
+}
+.greyBg{
+	width: 100%; height: 100%;
+	position: fixed; left: 0; top:0;
+	background: rgba(204,204,204,0.5);
+}
+/*button*/
+.loginF{
+	display: none;
+}
+.register{
+	height: 36px; width: 140px;
+	background: url(../images/login.png);
+}
+.login{
+	height: 36px; width: 130px;
+	background: url(../images/login.png); background-position: 0 40px;
+}
+.choosen{
+	border-bottom: 2px solid #000;
+}
+.registerbtn{
+	width: 400px; height: 40px; 
+	margin:20px 0;
+	background: #fff; font-size: 20px;
+}
+
+.none{ display: none !important ;}
+.errHint{
+	color: #f00; font-size: 0.8rem;
+}
+
+
+/*clearfix*/
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
+.wrapper{
+	display:table; float: left;
+	width: 70%; height: 100%;
+	background: #000;
+	overflow: hidden;
+}
+.wrapper span{
+	position: relative;
+    display:table-cell;
+    vertical-align:middle;
+}
+.wrapper span:after{
+	content: ""; display:block; 
+	width: 100%; height: 100%;
+	position: absolute; top: 0; left: 0;
+}
+.hint_w{
+	color: #ccc; font-size: 12px;
+}
+

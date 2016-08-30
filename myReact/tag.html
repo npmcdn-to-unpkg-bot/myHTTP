@@ -1,0 +1,38 @@
+
+<!doctype html>
+<html>
+	<head>
+		<title>itag</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">  
+		<link rel="shortcut icon" href=favicon.png />
+		<link rel=stylesheet type="text/css" href="./stylesheets/style.css">
+		<link rel=stylesheet type="text/css" href="./stylesheets/media_query.css">
+		<script type="text/javascript" src="./javascripts/jquery.js"></script>
+	</head>
+
+	<body>
+		<div class="header">
+			<h1>itag</h1>
+			<div class="h_cont">
+				<span class="icon"></span>
+				<span class="user"></span>
+			</div>
+		</div>
+
+		<div class="content">
+			<img data-imgId="001" src="./images/letters.jpg" class="fillImg clearfix"/>
+			<form class="postForm clearfix" action="post" >
+				<fieldset>
+					<legend>Tags:</legend>
+					<span>1.</span><input type="text" name="tag1"/><br/>
+					<span>2.</span><input type="text" name="tag2"/><br/>
+					<span>3.</span><input type="text" name="tag3"/><br/>
+					<span>&nbsp&nbsp&nbsp</span>
+					<button type="submit" class="submitbtn">post</button>
+					<button type="reset" class="resetbtn">skip</button>
+				</fieldset>
+			</form>
+		</div>
+		
+	</body>
+</html>

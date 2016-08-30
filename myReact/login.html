@@ -1,0 +1,59 @@
+
+<!doctype html>
+<html>
+	<head>
+		<title>itag</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">  
+		<link rel="shortcut icon" href=favicon.png />
+		<link rel=stylesheet type="text/css" href="./stylesheets/style.css">
+		<link rel=stylesheet type="text/css" href="./stylesheets/media_query.css">
+		<script type="text/javascript" src="./javascripts/jquery.js"></script>
+	</head>
+
+	<body>
+		<div class="header">
+			<h1>itag</h1>
+			<div class="h_cont">
+				<span class="icon"></span>
+				<span class="user"></span>
+			</div>
+		</div>
+
+		<div class="content registerArea">
+			<h4 class="register choosen J_choosen"></h4>
+			<h4 class="login J_choosen"></h4>
+			<form class="registerF" name="registerForm" action="post">
+				<fieldset> 
+					<span>Name</span><input type="text" name="name"/>  <br/>
+					<span>Password</span><input type="text" name="password"/ß>  <br/>
+					<span>Email</span><input type="text" name="email"/>  <br/>
+					<button type="submit" class="registerbtn J_register">Register</button>
+				</fieldset>
+			</form>
+			<form class="loginF" name="loginForm" action="post">
+				<fieldset class="addSpace">
+					<span>Name</span> <input type="text" name="name"/> <br/>
+					<span>Password</span> <input type="text" name="password"/> 
+					<button type="submit" class="registerbtn J_login">Log in</button>
+				</fieldset>
+			</form>
+		</div>
+		<script>
+		//change form and span style.
+			$(".J_choosen").click(function(){
+				var forms = document.forms;
+				var h4set = $(".registerArea").find('h4');
+				var index = 0;
+				if($(this).next("h4").length == 0){
+					index = 1;
+				}
+				var another = (index+1)%2;
+				$(h4set[index]).addClass('choosen');
+				$(h4set[another]).removeClass('choosen');	
+				$(forms[index]).css("display","block");
+				$(forms[another]).css("display","none");
+			})
+			
+		</script>
+	</body>
+</html>
